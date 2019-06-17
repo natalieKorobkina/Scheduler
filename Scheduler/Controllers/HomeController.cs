@@ -39,5 +39,28 @@ namespace Scheduler.Controllers
             return View();
         }
 
+<<<<<<< HEAD
     }
+||||||| merged common ancestors
+        public ActionResult StudentView()
+        {
+
+            return View();
+        }
+    }
+=======
+        public ActionResult StudentView()
+        {
+
+            return View();
+        }
+
+        public ActionResult RoomView()
+        {
+
+            return View();
+        }
+    }
+
+>>>>>>> e36030bfc065d8e77d5ed0f2bc6494a8e885ecb9
 }
