@@ -69,29 +69,37 @@
             </div>
             <div class="menu">
                 <ul id="menu">
-                    @if (Request.Cookies["HBFrontEnd"] != null)
-                    {
-                        <li id="menu-home">
-                            <a href="@Url.Action("GetHouseholds", "Household")">
-                                <i class="fa fa-home"></i><span> Your Households</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Create", "Household")">
-                                <i class="fa fa-book"></i><span>Create Household</span>
-                            </a>
-                        </li>
-                        <li id="menu-comunicacao">
-                            <a href="@Url.Action("InvitingHouseholds", "Household")">
-                                <i class="fa fa-cogs"></i><span>Join Household</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("ChangePassword", "Account")">
-                                <i class="fa fa-cog"></i><span>Change Password</span>
-                            </a>
-                        </li>
-                    }
+                    <li id="menu-home">
+                        <a href="@Url.Action("AllCourses", "Home")">
+                            <i class="fa fa-home"></i><span> Your courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("CreateCourse", "Home")">
+                            <i class="fa fa-book"></i><span>Create Course</span>
+                        </a>
+                    </li>
+                    <li id="menu-comunicacao">
+                        <a href="@Url.Action("UpdateHolidays", "Home")">
+                            <i class="fa fa-cogs"></i><span>Update Holidays</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Student", "Home")">
+                            <i class="fa fa-cog"></i><span>Student View</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Instructor", "Home")">
+                            <i class="fa fa-cog"></i><span>Instructor View</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Room", "Home")">
+                            <i class="fa fa-cog"></i><span>Room View</span>
+                        </a>
+                    </li>
+
                     <li>
                         @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
                         {
