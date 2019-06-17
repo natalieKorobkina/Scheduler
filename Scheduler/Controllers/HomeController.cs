@@ -32,5 +32,12 @@ namespace Scheduler.Controllers
 
             return View();
         }
+
+        public ActionResult InstructorView()
+        {
+
+            return View();
+        }
+
     }
 }
