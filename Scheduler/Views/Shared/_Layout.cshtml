@@ -25,23 +25,13 @@
                 <div class="header-main">
                     <div class="header-left" style="width:77%">
                         <div class="logo-name">
-                            <img id="logo" src="~/images/house_PNG72.png" alt="Logo" />
+                            <img id="logo" src="~/images/mitt-logo.png" alt="Logo" />
                         </div>
-                        @*<div class="logo-name" style="width:auto; margin: 14px;">
-                                @if (Request.Cookies["HBFrontEnd"] != null)
-                                {
-                                    <a href="@Url.Action("GetHouseholds", "Household")" class="nav-link">
-                                        <h1><span>Household Budgeter</span></h1>
-                                    </a>
-                                }
-                            </div>*@
+                        
                         <div class="clearfix"> </div>
                     </div>
                     <div class="header-right">
-                        @if (Request.Cookies["HBFrontEnd"]["userName"] != null)
-                        {
-                            <div>Wellcome @Request.Cookies["HBFrontEnd"]["UserName"]</div>
-                        }
+                        
                         <div class="clearfix"> </div>
                     </div>
                     <div class="clearfix"> </div>
@@ -54,7 +44,7 @@
                 <!--inner block end here-->
                 <!--copy rights start here-->
                 <div class="copyrights">
-                    <p>© 2019  Designed by  Natalie Korobkina </p>
+                    <p>© 2019   </p>
                 </div>
                 <!--COPY rights end here-->
             </div>
@@ -68,14 +58,15 @@
                 </a>
             </div>
             <div class="menu">
+                
                 <ul id="menu">
                     <li id="menu-home">
-                        <a href="@Url.Action("AllCourses", "Home")">
-                            <i class="fa fa-home"></i><span> Your courses</span>
+                        <a href="@Url.Action("All courses", "Home")">
+                            <i class="fa fa-home"></i><span> Your Courses</span>
                         </a>
                     </li>
                     <li>
-                        <a href="@Url.Action("CreateCourse", "Home")">
+                        <a href="@Url.Action("Create", "Home")">
                             <i class="fa fa-book"></i><span>Create Course</span>
                         </a>
                     </li>
@@ -85,21 +76,20 @@
                         </a>
                     </li>
                     <li>
-                        <a href="@Url.Action("Student", "Home")">
+                        <a href="@Url.Action("StudentView", "Home")">
                             <i class="fa fa-cog"></i><span>Student View</span>
                         </a>
                     </li>
                     <li>
-                        <a href="@Url.Action("Instructor", "Home")">
+                        <a href="@Url.Action("InstructorView", "Home")">
                             <i class="fa fa-cog"></i><span>Instructor View</span>
                         </a>
                     </li>
                     <li>
-                        <a href="@Url.Action("Room", "Home")">
+                        <a href="@Url.Action("RoomView", "Home")">
                             <i class="fa fa-cog"></i><span>Room View</span>
                         </a>
                     </li>
-
                     <li>
                         @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
                         {
