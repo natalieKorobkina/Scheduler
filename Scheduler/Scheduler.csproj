@@ -165,6 +165,7 @@
     <Content Include="fonts\ubuntu\UFL.txt" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\mitt-logo.png" />
     <Content Include="js\bars.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\chart.js" />
@@ -311,6 +312,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\StudentView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
