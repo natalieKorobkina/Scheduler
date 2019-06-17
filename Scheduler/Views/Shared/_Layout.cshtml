@@ -27,21 +27,11 @@
                         <div class="logo-name">
                             <img id="logo" src="~/images/mitt-logo.png" alt="Logo" />
                         </div>
-                        @*<div class="logo-name" style="width:auto; margin: 14px;">
-                                @if (Request.Cookies["HBFrontEnd"] != null)
-                                {
-                                    <a href="@Url.Action("GetHouseholds", "Household")" class="nav-link">
-                                        <h1><span>Household Budgeter</span></h1>
-                                    </a>
-                                }
-                            </div>*@
+                        
                         <div class="clearfix"> </div>
                     </div>
                     <div class="header-right">
-                        @*@if (Request.Cookies["HBFrontEnd"]["userName"] != null)
-                        {
-                            <div>Wellcome @Request.Cookies["HBFrontEnd"]["UserName"]</div>
-                        }*@
+                        
                         <div class="clearfix"> </div>
                     </div>
                     <div class="clearfix"> </div>
@@ -54,7 +44,7 @@
                 <!--inner block end here-->
                 <!--copy rights start here-->
                 <div class="copyrights">
-                    <p>© 2019  Designed by  Natalie Korobkina, </p>
+                    <p>© 2019   </p>
                 </div>
                 <!--COPY rights end here-->
             </div>
@@ -68,34 +58,36 @@
                 </a>
             </div>
             <div class="menu">
+                
                 <ul id="menu">
-                    @if (Request.Cookies["HBFrontEnd"] != null)
-                    {
-                        <li id="menu-home">
-                            <a href="@Url.Action("GetHouseholds", "Household")">
-                                <i class="fa fa-home"></i><span> Your Households</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("Create", "Household")">
-                                <i class="fa fa-book"></i><span>Create Household</span>
-                            </a>
-                        </li>
-                        <li id="menu-comunicacao">
-                            <a href="@Url.Action("InvitingHouseholds", "Household")">
-                                <i class="fa fa-cogs"></i><span>Join Household</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="@Url.Action("ChangePassword", "Account")">
-                                <i class="fa fa-cog"></i><span>Change Password</span>
-                            </a>
-                        </li>
-                    }
-
+                    <li id="menu-home">
+                        <a href="@Url.Action("All courses", "Home")">
+                            <i class="fa fa-home"></i><span> Your Courses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Create", "Home")">
+                            <i class="fa fa-book"></i><span>Create Course</span>
+                        </a>
+                    </li>
+                    <li id="menu-comunicacao">
+                        <a href="@Url.Action("UpdateHolidays", "Home")">
+                            <i class="fa fa-cogs"></i><span>Update Holidays</span>
+                        </a>
+                    </li>
                     <li>
                         <a href="@Url.Action("StudentView", "Home")">
                             <i class="fa fa-cog"></i><span>Student View</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("InstructorView", "Home")">
+                            <i class="fa fa-cog"></i><span>Instructor View</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("RoomView", "Home")">
+                            <i class="fa fa-cog"></i><span>Room View</span>
                         </a>
                     </li>
                     <li>
